@@ -156,16 +156,3 @@ Results are saved in the `results/` folder:
 To improve predictive maintenance by accurately estimating engine failure time using machine learning models.
 
 ---
-
-## 📌 Future Improvements
-
-* Add Transformer-based models
-* Hyperparameter tuning
-* Real-time prediction system
-* Web dashboard (Streamlit)
-
-
-
-
-Just tell me 👍
-```
