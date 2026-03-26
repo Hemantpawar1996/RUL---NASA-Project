@@ -1,0 +1,39 @@
+RUL Prediction using NASA Dataset
+
+Overview:
+This project predicts the Remaining Useful Life (RUL) of aircraft engines using the NASA Turbofan Engine Degradation dataset. It applies deep learning models such as LSTM, GRU, and CNN for predictive maintenance. The goal is to estimate how many cycles an engine can run before failure.
+
+Features:
+The project includes data preprocessing and scaling, RUL calculation for training and test datasets, exploratory data analysis (EDA), sequence generation for time-series modeling, and implementation of deep learning models including LSTM, GRU, and CNN. It evaluates model performance using RMSE, MAE, R² Score, and NASA Score. It also generates visualizations such as training loss curves, prediction vs actual plots, and error distributions.
+
+Project Structure:
+The project consists of a main Python file (main.py), a data folder containing train_FD001.txt, test_FD001.txt, and RUL_FD001.txt, and a results folder where plots and evaluation metrics are stored.
+
+Installation:
+First, clone the repository using: git clone https://github.com/your-username/RUL-NASA-Project.git
+ and navigate into the folder. It is recommended to create a virtual environment using python -m venv venv and activate it (source venv/bin/activate for Linux/Mac or venv\Scripts\activate for Windows). Then install the required libraries using pip install numpy pandas matplotlib scikit-learn torch.
+
+Required Libraries:
+The project uses numpy, pandas, matplotlib, scikit-learn, torch (PyTorch), argparse, and pathlib.
+
+How to Run:
+Run the project using the command python main.py. You can also pass optional arguments such as python main.py --epochs 20 --batch 512 --window 30 --subset FD001.
+
+Dataset:
+The project uses the NASA Turbofan Engine Degradation Dataset which includes training data (train_FD001.txt), testing data (test_FD001.txt), and RUL labels (RUL_FD001.txt).
+
+Models Used:
+LSTM is used to capture long-term dependencies in time-series data, GRU is used as a more efficient alternative to LSTM with fewer parameters, and CNN is used to extract temporal patterns using convolutional layers.
+
+Evaluation Metrics:
+Model performance is evaluated using RMSE (Root Mean Squared Error), MAE (Mean Absolute Error), R² Score, and NASA Score which is a custom metric designed for RUL prediction tasks.
+
+Output:
+All results are saved in the results folder including training loss plots, prediction scatter plots, error distribution graphs, and a CSV file comparing model performance.
+
+Objective:
+The main objective of this project is to improve predictive maintenance by accurately estimating engine failure time using machine learning models.
+
+Future Improvements:
+Future work may include adding Transformer-based models, performing hyperparameter tuning, developing a real-time prediction system, and building a web dashboard using Streamlit.
+
